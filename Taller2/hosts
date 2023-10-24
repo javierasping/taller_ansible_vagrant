@@ -2,13 +2,13 @@ all:
   children:
     servidores_web:
       hosts:
-        nombre_de_la_primera_maquina: 
-          ansible_ssh_host: 
-          ansible_ssh_user: 
-          ansible_ssh_private_key_file:
+        s_web_fjcd: 
+          ansible_ssh_host: 172.22.200.152
+          ansible_ssh_user: debian
+          ansible_ssh_private_key_file: /home/javiercruces/.ssh/jcruces
     servidores_bd:
       hosts:
-        nombre_de_la_segunda_maquina: 
-          ansible_ssh_host:
-          ansible_ssh_user:
-          ansible_ssh_private_key_file:
+        s_bbdd_fjcd: 
+          ansible_ssh_host: 172.22.200.27
+          ansible_ssh_user: debian
+          ansible_ssh_private_key_file: /home/javiercruces/.ssh/jcruces
